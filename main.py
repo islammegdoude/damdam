@@ -1,3 +1,29 @@
+from employee import Employee
+employee1 = Employee("islam", 60, "dev app", True, 5, 1500)
+employee2 = Employee("salah", 25, "dev web", False, 3.5, 800)
+print(employee1.salary)
+employee1.bonus()
+print(employee2.salary)
+employee2.bonus()
+
+"""
+try:
+    value = int(input("inter your age: "))
+    print(value)
+    print("success")
+    result = 10/0
+except ZeroDivisionError as err:
+    print("Your Errur is :", err)
+except ValueError as err1:
+    print("Your Errrur is :", err1)
+
+def power(baseNum, pow_Num):
+    result = 1
+    for index in range(pow_Num):
+        result = result * baseNum
+    return result
+print(power(2,3))
+
 class Person:
     def __init__(self, fname, lname):
         self.firstname = fname
@@ -21,6 +47,8 @@ pass
 y = Student("islam", "Megdoude", 2020)
 x = Person("salah eddine", "Megdoude")
 y.welcoom()
+"""
+
 """
 def myfunc(fname):
     print(fname + " islam")
